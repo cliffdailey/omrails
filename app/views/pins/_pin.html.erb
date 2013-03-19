@@ -2,6 +2,7 @@
 	<%= link_to (image_tag pin.image), pin %>
 	<p class="description">
 		<%= pin.description %>
+		</p>
 	</p>
 	<p>
 		<strong>
@@ -10,8 +11,8 @@
 	</p>
 	<% if current_user == pin.user %>
 		<p>
-			<%= link_to 'Edit', edit_pin_path(pin) %>
-			<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<%= link_to 'Edit', edit_pin_path(pin) %> |
+			<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 		</p>
 	<%end%>
 </div>

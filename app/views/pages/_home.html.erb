@@ -1,15 +1,13 @@
 <% if user_signed_in? %>
 <% else %>
-
-<div class="hero-unit">
-		<h1>Welcome to One Month Rails!</h1>
-	<p>
-		You've found the home page for the
-		<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-		application.
-	</p>
+<div style="text-align: center">
+<a href="/"><img src="http://3.bp.blogspot.com/-0XQgJuOgFz4/UUe7149F-OI/AAAAAAAAAoU/JDwcnEFGSdE/s1600/heelgasm.png" alt="some_text"></a>
+<h3 style="padding-bottom:5px;">Discover, organize and share shoes you love.</h3>
+	
 	<p>
 		<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 	</p>
+	<br>
+	<br>
 </div>
 <% end %>
