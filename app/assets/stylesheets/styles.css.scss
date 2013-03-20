@@ -6,14 +6,14 @@ $navbarLinkColor: #F5F5F5;
 $navbarLinkColorHover: white;
 $btnPrimaryBackground: #FA2E59;
 $btnPrimaryBackgroundHighlight: #FA2E59;
-$navbarBackgroundHighlight: teal;
+$navbarBackgroundHighlight: #00cccc;
 $navbarBackground: teal;
 
 
 @import 'bootstrap';
 
 body {
-	padding-top:80px;
+	padding-top:70px;
 	background-color: #F5F5F5;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .navbar-inner {
 	@include box-shadow(none !important);
-	border: 1;
+	border: 0;
 }
 .footer {
 	margin-top: 50px;
