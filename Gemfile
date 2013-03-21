@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'paperclip', '~> 3.4.0'
 gem 'thin'
+gem 'aws-sdk'
 
 group :production do
 	gem 'pg'

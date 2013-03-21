@@ -67,4 +67,14 @@ Omrails::Application.configure do
 
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "heelgasm",
+      :access_key_id => "AKIAI55EHQ6YGYPFMNLQ",
+      :secret_access_key => "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"
+
+  }
+}
 end
