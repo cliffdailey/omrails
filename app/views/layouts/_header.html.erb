@@ -1,6 +1,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+
  
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -17,10 +18,12 @@
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
       	<ul class="nav">
-          <li><%= link_to "Home", root_path %></li>
-			     <li><%= link_to "About", about_path %></li>
-		    </ul>
+          <li><%= link_to "About", about_path %></li>
+
+        </ul>
+
 		    <ul class="nav pull-right">
+
         <% if user_signed_in? %>
             <li><%= link_to "Post +", new_pin_path %></li>
             <li><%= link_to "Edit Profile", edit_user_registration_path %></li>

@@ -1,3 +1,4 @@
+
 <div class="row">
 		<div class="span6 offset3">
 			<div class="well">
@@ -7,16 +8,18 @@
 			</p>
 		<p>
 			<strong>
-		  <font color="#8c7e7e">Posted by</font><font color="teal"> <%= @pin.user.name %> </font>
+		  <font color="#8c7e7e">Posted by</font><font color="teal"> <%= link_to @pin.user.name, :action => 'index_user', :id => @user.id %> </font>
 			</strong>
 		</p>
 		<% if current_user == @pin.user %>
 			<%= link_to 'Edit', edit_pin_path(@pin) %> |
 		<% end %>
 			<%= link_to 'Back', pins_path %> <br> <br>
-
+<p>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="cliffdailey">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<fb:like send="false" layout="button_count" width="450" show_faces="false"></fb:like>
+		</p>
 	</div>
 </div>
 </div>

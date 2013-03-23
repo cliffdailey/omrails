@@ -5,6 +5,10 @@ Omrails::Application.routes.draw do
   devise_for :users
 
   get 'about' => 'pages#about'
+  get 'team' => 'pages#team'
+  match '/profile', :to => "profile#show"
+  get 'users/pins/:id' => 'pins#index_user'
+
 
 
   root :to => 'pins#index'
