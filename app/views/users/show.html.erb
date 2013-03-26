@@ -1,0 +1,21 @@
+<div class="hero-unit">
+	<div class="user-info">
+  <h2><%= @user.name %></h2>
+  <p><%= @user.email %></p>
+</div>
+</div>
+
+
+
+<div id="pins">
+  <% unless @user.pins.blank? %>       
+    <% @user.pins.each do |pin| %>
+        <div class="box">
+          <%= link_to (image_tag pin.image), pin %>
+          <p class="description"><%= pin.description %><p>             
+        </div> 
+    <% end %>  
+  <% else %>
+    Nothing pinned yet!
+  <% end %>
+</div>

@@ -1,12 +1,12 @@
 <div class="box">
-	<%= link_to (image_tag pin.image), pin %>
+		<%= link_to (image_tag pin.image), pin %>
 	<p class="description">
 		<%= pin.description %>
 		</p>
-	<p>
-		<strong>
-			<font color="#8c7e7e" >Posted by</font> <font color="teal"><%= pin.user.name %></font>
-		</strong>
+	<p class="description">
+		
+			<font color="#8c7e7e" >by</font> <font color="teal"><%= link_to "#{pin.user.name}", user_path(pin.user) %></font>
+
 	</p>
 	<% if current_user == pin.user %>
 		<p>

@@ -21,7 +21,7 @@ body {
 
 .navbar-inner {
 	@include box-shadow(none !important);
-	border: 0;
+	border: 0px;
 }
 .footer {
 	margin-top: 50px;
@@ -38,7 +38,7 @@ body {
 .box {
 	margin: 5px;
 	background-color: white;
-	padding: 5px;
+	padding: 5.5px;
 	font-size: 11px;
 	line-height: 1.4em;
 	float: left;
@@ -46,7 +46,7 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px #444;
-	width: 270px;
+	width: 212px;
 }
 
 .box img {
@@ -65,5 +65,12 @@ body {
 	background-color: white;
 }
 
+body 
+p {line-height: 1.5em;
+}
+
+.hero-unit {
+	background-color: #ffffff;
+}
 
 
