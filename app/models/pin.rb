@@ -8,5 +8,7 @@ class Pin < ActiveRecord::Base
 															size: { less_than: 5.megabytes }
 
   belongs_to :user
+  has_many :likes
+  has_many :liking_users, :through => :likes, :source => :user
   has_attached_file :image
 end

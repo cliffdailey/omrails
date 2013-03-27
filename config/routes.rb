@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  resources :likes
+
   resources :pins 
 
 
