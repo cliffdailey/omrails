@@ -8,6 +8,7 @@ Omrails::Application.routes.draw do
   resources :users, :only => ['show']
 
   get 'about' => 'pages#about'
+  get 'why' => 'pages#why'
   
   get 'users/pins/:id' => 'pins#index_user'
 

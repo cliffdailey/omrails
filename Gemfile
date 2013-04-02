@@ -7,6 +7,7 @@ gem 'simple_form'
 gem 'paperclip', '~> 3.4.0'
 gem 'thin'
 gem 'aws-sdk'
+gem "rails_autolink", "~> 1.0.9"
 
 group :production do
 	gem 'pg'

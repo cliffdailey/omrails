@@ -7,10 +7,10 @@
   <%= f.full_error :image_content_type, class: "alert alert" %>
 
  		<%= f.input :image, label: "Upload an image" %>
-    <%= f.input :description, as: :text, input_html: { rows: "5" } %>
+    <%= f.input :description, label: "Job descripton", as: :text, input_html: { rows: "5" } %>
 
 
   <div class="form-actions">
-    <%= f.submit "Post heels!", class: "btn btn-primary" %>
+    <%= f.submit "Post My Job", class: "btn btn-primary" %>
   </div>
 <% end %>

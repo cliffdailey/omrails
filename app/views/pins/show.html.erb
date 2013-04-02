@@ -1,4 +1,3 @@
-
 <div style="text-align: center">
 <span class='st_twitter_hcount' displayText='Tweet'></span>
 <span class='st_fblike_hcount' displayText='Facebook Like'></span>
@@ -10,19 +9,20 @@
 <div class="row">
 		<div class="span5 offset4">
 			<div class="well">
+				
 				<%= link_to (image_tag @pin.image), "/"%>
 			<p class="description">
 				<%= @pin.description %>
 			</p>
-		<p>
+			<br>
+			<font color="#8c7e7e" >posted by</font> <font color="teal"><%= @pin.user.name %></font><br><br>
 			
-		  <font color="#8c7e7e">Posted by</font> <font color="teal"><%= @pin.user.name %> </font> 
-			
-		</p>
+		
 		<% if current_user == @pin.user %>
 			<%= link_to 'Edit', edit_pin_path(@pin) %> |
 		<% end %>
 			<%= link_to 'Back', pins_path %> <br> <br>
+			
 
 	</div>
 </div>

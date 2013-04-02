@@ -5,12 +5,13 @@
 		</p>
 	<p class="description">
 		
-			<font color="#8c7e7e" >by</font> <font color="teal"><%= link_to "#{pin.user.name}", user_path(pin.user) %></font>
+			<font color="#8c7e7e" >posted by</font> <font color="teal"><%= link_to "#{pin.user.name}", user_path(pin.user) %></font>
 
 			<div id="like_star_<%= pin.id %>">
 		<%= render 'pins/star', :pin => pin %>
 	</div>	
 	</p>
+
 	<% if current_user == pin.user %>
 		<p>
 			<%= link_to 'Edit', edit_pin_path(pin) %> |

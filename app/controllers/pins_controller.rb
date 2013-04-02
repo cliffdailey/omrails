@@ -1,3 +1,5 @@
+require 'rails_autolink'
+
 class PinsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
 
