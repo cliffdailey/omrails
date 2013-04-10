@@ -6,7 +6,7 @@ Omrails::Application.routes.draw do
 
   resources :pins 
 
-end
+
   devise_for :users
   resources :users, :only => ['show']
 
