@@ -10,19 +10,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      
+    
+
       <!-- Be sure to leave the brand out there if you want it shown -->
+      <!-- <div class="brand">
+      <a href="/"><img alt="Hslogosm" src="http://3.bp.blogspot.com/-5KprjPg5cSE/UVstYm9grHI/AAAAAAAAAq4/hdLS3UL2yGw/s1600/hyrebetalogo.png" height="25" width="50"></a>
+    </div>
       <!-- <%= link_to "OmgHeels", root_path, class: "brand" %>
       <li><%= link_to "Login", new_user_session_path %></li> 
       <li><%= link_to "Home", root_path %></li>
       link_to @pin.user.name, :action => 'index_user', :id => @user.id
  
       <!-- Everything you want hidden at 940px or less, place within here -->
-      
-      	<ul class="nav">
-
-        </ul>
+      <div class='nav-collapse'>
+      	
         <ul class="nav pull-left">
+
         <li><%= link_to "Hyre", root_path %></li>
         <li><%= link_to "Why Hyre?", why_path %></li>
       </ul>
@@ -41,11 +44,11 @@
             <li><%= link_to "Profile", user_path(current_user) %></li>
             <li><%= link_to "Liked Jobs", likes_path %></li>
             <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "About Hyre", about_path %></li>
           </ul>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             <% else %> 
-            <li><%= link_to "Our Story", about_path %></li>
+            <li><%= link_to "About Hyre", about_path %></li>
           </div>
           <% end %>
 		    </ul>

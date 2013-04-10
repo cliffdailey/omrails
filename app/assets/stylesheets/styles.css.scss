@@ -2,12 +2,12 @@
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-$navbarLinkColor: #cccccc;
-$navbarLinkColorHover: #999999;
+$navbarLinkColor: #999999;
+$navbarLinkColorHover: #ffffff;
 $btnPrimaryBackground: #3399ff;
 $btnPrimaryBackgroundHighlight: #3366cc;
-$navbarBackgroundHighlight: #ffffff;
-$navbarBackground: #ffffff;
+$navbarBackgroundHighlight: #333333;
+$navbarBackground: #000000;
 
 
 @import 'bootstrap';
@@ -15,6 +15,7 @@ $navbarBackground: #ffffff;
 body {
 	padding-top:60px;
 	background-color: #ffffff;
+	line-height: 1.5em;
 }
 
 
@@ -60,17 +61,17 @@ body {
 
 .description {
 	margin: 10px 0px 5px;
-	font-size: 13px;
+	font-size: 12px;
 	color: #333333;
 }
 
 .well {
 	background-color: white;
+	width: 500px;
+	margin: 0px 0px 0px 65px;
 }
 
-body 
-p {line-height: 1.5em;
-}
+
 
 .hero-unit {
 	background-color: #e6e6e6;
@@ -87,4 +88,8 @@ p {line-height: 1.5em;
     background-position: center center;
     height: 14px;
     width: 14px;
+}
+
+.why {
+	background-color: #cccccc;
 }

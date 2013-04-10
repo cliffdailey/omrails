@@ -7,12 +7,13 @@
 <br>
 </div>
 <div class="row">
-		<div class="span5 offset4">
+		<div class="span5 offset3">
 			<div class="well">
-				
+				<div style="text-align: center">
 				<%= link_to (image_tag @pin.image), "/"%>
+			</div>
 			<p class="description">
-				<%= @pin.description %>
+				<%= simple_format(auto_link(@pin.description, :html => { :target => '_blank'})) %>
 			</p>
 			<br>
 			<font color="#8c7e7e" >posted by</font> <font color="teal"><%= @pin.user.name %></font><br><br>

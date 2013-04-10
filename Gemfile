@@ -8,6 +8,8 @@ gem 'paperclip', '~> 3.4.0'
 gem 'thin'
 gem 'aws-sdk'
 gem "rails_autolink", "~> 1.0.9"
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :production do
 	gem 'pg'
