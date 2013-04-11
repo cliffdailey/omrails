@@ -11,7 +11,7 @@ class PinsController < ApplicationController
   end
 
   def index
-    @pins = Pin.order('created_at desc')
+    @pins = Pin.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
