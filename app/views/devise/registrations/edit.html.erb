@@ -1,8 +1,13 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
+<br>
+<br>
+<div class="row">
+  <div class="span6 offset3">
+    <div class="box-text">
+      <font size="6px">Account</font><br><font color="#999999" face="HelveticaNeue-Light">Change your basic account info and password.</font>
+<br>
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
-
+<br>
 	<%= f.input :name %>
   <%= f.input :email %>
   <%= f.input :password, label: "New Password", autocomplete: "off" %>
@@ -10,8 +15,11 @@
   <%= f.input :current_password %>
 
   <div class="form-actions">
-    <%= f.submit "Update", class: "btn btn-primary"%>
+    <%= f.submit "Save changes", class: "btn btn-primary"%>
   </div>
+</div>
+</div>
+</div>
   <% end %>
 
 
