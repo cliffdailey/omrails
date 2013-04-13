@@ -1,15 +1,25 @@
 		<br>
-		<div class="container">
-			<div class="row">
+		<div class="row">
 			<div class="span6 offset3">
-			<font size="6px">Create Job Listing</p></font> <strong><font color="blue" face="HelveticaNeue-Light">**Currently launched in San Francisco Bay area for Tech & Design jobs only</font></strong>
-		</div>
-	</div>
-	<div>
+				<div class="box-text">
+			<font size="6px">Create Job Listing</p></font> <font color="blue" face="HelveticaNeue">**Currently launched in San Francisco Bay area for Tech & Design jobs only</font>
+			<br>
+			<br>
+	<%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
 
-		
+  <%= f.full_error :image_file_size, class: "alert alert" %>
+  <%= f.full_error :image_content_type, class: "alert alert" %>
 
-<br>
-<%= render 'form' %>
+ 		<%= f.input :image, label: "Upload beautiful image" %>
+    <%= f.input :description, label: "Job descripton", as: :text, input_html: { rows: "10" }, :placeholder =>"...don't forget to show your company's personality!", :style =>"color:#000000;" %>
 
+
+  <div class="form-actions">
+    <%= f.submit "Post My Job Listing", class: "btn btn-primary" %>
+  </div>
+</div>
+
+		<% end %>
+<!--<%= render 'form' %> -->
 <%= link_to 'Back', pins_path %>

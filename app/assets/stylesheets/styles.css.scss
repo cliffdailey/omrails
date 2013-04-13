@@ -7,7 +7,7 @@ $navbarLinkColorHover: #333333;
 $btnPrimaryBackground: #3399ff;
 $btnPrimaryBackgroundHighlight: #3366cc;
 $navbarBackgroundHighlight: #ffffff;
-$navbarBackground: #ffffff;
+$navbarBackground: #e8e8e8;
 
 
 @import 'bootstrap';
@@ -72,7 +72,7 @@ body {
 }
 
 .hero-unit {
-	background-color: #e6e6e6;
+	background-color: #f7f7f7;
 }
 
 .icon-black-star {
@@ -113,7 +113,7 @@ body {
 }
 .box-text {
 	margin: 0 0px 60px 0;
-	padding: 40px;
+	padding: 30px;
 	background: #ffffff;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
