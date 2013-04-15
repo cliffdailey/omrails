@@ -1,11 +1,12 @@
 <% if user_signed_in? %>
-	<div style="text-align: center">
-		<a href="/"><img src="/assets/hyrebetalogo.png" height="30" width="90"alt="some_text"></a><br><br>
-	</div>
+
+	<body background="/assets/whitetexturebg.png" style="background-repeat:repeat;">
 
 <% else %>
-
+<div class="twobackground">
+	</div>
 <body background="/assets/startupofficebg.png" style="background-repeat:no-repeat;">
+
 
 	
 		<!--<a href="/"><img src="/assets/hyrebetalogo.png" height="70" width="130"></a><br> -->
@@ -20,7 +21,7 @@
 	
 		<font size="7.0em" face="HelveticaNeue-Light" color="white" style="text-shadow:2px 2px 8px #000000;">Hyre is a technology job board.</p></font>
 
-		<font size="4px" color="#ffffff" style="text-shadow: 1px 1px 2px #000000;" face="helveticaneue-light" >A simple, beautiful way to help startups connect <br>with the best <font face="Baskerville-Italic">&</font> brightest.</font>
+		<font size="4px" color="#ffffff" style="text-shadow: 1px 1px 2px #000000;letter-spacing: 1px" face="helveticaneue-light"  >A simple, beautiful way to help startups connect <br>with the best <font face="Baskerville-Italic">&</font> brightest.</font>
 	
 <br>
 <br>
@@ -28,7 +29,7 @@
 	<p>	
 		<div style="padding-bottom: 135px">
 		<%= link_to "Login", new_user_session_path, class: "btn btn-large" %>&nbsp;&nbsp;
-		<%= link_to "Hiring? Post a FREE Job", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		<%= link_to "Post Free Job Listing", new_user_registration_path, class: "btn btn-primary btn-large" %>
 	</p>
 	<br>
 
@@ -40,6 +41,7 @@
 </body>
 
 	<div class="row">
+
 	</div>
 
 

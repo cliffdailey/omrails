@@ -6,22 +6,25 @@
 </div>
 <br>
 </div>
+
+<body background="/assets/whitetexturebg.png" style="background-repeat:repeat;">
+
 <div class="row">
 		<div class="span5 offset3">
 			<div class="well">
+				<p><font size="5px" color="#3d3d3d"><%= @pin.title %></font><font color="#a3a3a3" face="helveticaneue-light" size="2px">    posted by</font> <%= link_to "#{@pin.user.name}", user_path(@pin.user) %></font></p></font>
+
 				<div style="text-align: center">
-				<%= link_to (image_tag @pin.image), "/"%>
-			</div>
+					<%= link_to (image_tag @pin.image), "/"%>
+				</div>
 			<p class="description">
 				<%= simple_format(auto_link(@pin.description, :html => { :target => '_blank'})) %>
 			</p>
-			<br>
-			<font color="#8c7e7e" >posted by</font> <font color="teal"><%= @pin.user.name %></font><br><br>
+<br>
 			
-		
-		<% if current_user == @pin.user %>
+			<% if current_user == @pin.user %>
 			<%= link_to 'Edit', edit_pin_path(@pin) %> |
-		<% end %>
+			<% end %>
 			<%= link_to 'Back', pins_path %> <br> <br>
 			
 

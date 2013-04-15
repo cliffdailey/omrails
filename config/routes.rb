@@ -10,6 +10,7 @@ Omrails::Application.routes.draw do
 
   get 'about' => 'pages#about'
   get 'why' => 'pages#why'
+  get 'pricing' => 'pages#pricing'
   
   get 'users/pins/:id' => 'pins#index_user'
 

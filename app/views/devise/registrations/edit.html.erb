@@ -1,3 +1,5 @@
+<body background="/assets/whitetexturebg.png" style="background-repeat:repeat;">
+
 <br>
 <br>
 <div class="row">
@@ -5,10 +7,10 @@
     <div class="box-text">
       <font size="6px">Account</font><br><font color="#999999" face="HelveticaNeue-Light">Change your basic account info and password.</font>
 <br>
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
-  <%= f.error_notification %>
+    <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
+    <%= f.error_notification %>
 <br>
-	<%= f.input :name %>
+	<%= f.input :name, label: "Company Name" %>
   <%= f.input :email %>
   <%= f.input :password, label: "New Password", autocomplete: "off" %>
   <%= f.input :password_confirmation, label: "New Password Confirmation", autocomplete: "off" %>
@@ -17,6 +19,7 @@
   <div class="form-actions">
     <%= f.submit "Save changes", class: "btn btn-primary"%>
   </div>
+  <%= link_to "Back", :back %>
 </div>
 </div>
 </div>

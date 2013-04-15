@@ -1,8 +1,11 @@
+<body background="/assets/whitetexturebg.png" style="background-repeat:repeat;">
+
 <div class="hero-unit">
-<div class="user-info">
-	<h2><%= current_user.name %></h2>
+	<div class="user-info">
+		<font size="7px" color="#d7d7d7" style="letter-spacing: 1px"><%= current_user.name %></font>
+	</div>
 </div>
-</div>
+
 <div id="pins">
 	<% unless current_user.likes.blank? %>
 		<% @pins.each do |pin| %>
