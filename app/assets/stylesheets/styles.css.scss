@@ -129,11 +129,24 @@ body {
 }
 .hero-section2 {
 	background-color: #fff; 
-	height: 800px;
+	height: 750px;
 	padding: 65px 80px;
 	width: 750px;
 	text-align: center;
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
 	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 2px;
+	
+}
+
+.hero-section3 {
+	background-color: #fff; 
+	height: 200px;
+	padding: 65px 80px;
+	width: 750px;
+	text-align: center;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 2px;
 	
 }
