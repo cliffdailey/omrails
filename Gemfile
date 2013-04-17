@@ -10,6 +10,9 @@ gem 'aws-sdk'
 gem "rails_autolink", "~> 1.0.9"
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
+gem 'stripe'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :production do
 	gem 'pg'

@@ -3,6 +3,7 @@
     <div class="container">
       <a class="brand" href="/"> <img src="http://2.bp.blogspot.com/-PK7V3iqn1h4/UWhojJ-CByI/AAAAAAAAArQ/hTO4-tpC57o/s1600/hyreheaderlogo.png" alt="home" height="30" width="89"></a>
       
+      
  
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -50,7 +51,7 @@
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             <% else %>
             <li><%= link_to "Why Hyre?", why_path %></li>
-            <li><%= link_to "Pricing", pricing_path %></li> 
+            <!--<li><%= link_to "Pricing", pricing_path %></li> -->
             <li><%= link_to "About", about_path %></li>
           </div>
           <% end %>
