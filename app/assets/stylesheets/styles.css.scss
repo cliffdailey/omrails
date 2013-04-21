@@ -1,6 +1,6 @@
 /* You could change the font*/
-/*$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+/*$baseFontFamily: Oxygen;*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
 
 $navbarLinkColor: #cccccc;
 $navbarLinkColorHover: #333333;
@@ -16,7 +16,19 @@ body {
 	padding-top:60px;
 	background-color: #ffffff;
 	line-height: 1.5em;
+	padding-left: 10px;
+
 }
+
+#myDiv{
+	background-image:url(startupoffice3.png), url(whitetexturebg.png);
+	background-repeat: no-repeat, repeat;
+}
+
+/*.topshadow {
+	background-image: url(startupoffice3.png), url(images/whitetexturebg.png);
+  background-repeat: no-repeat, repeat;
+}*/
 
 
 
@@ -44,11 +56,11 @@ body {
 	font-size: 11px;
 	line-height: 1.4em;
 	float: left;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 2px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	box-shadow: 0px 1px 3px #444;
-	width: 270px;
+	width: 212px;
 }
 
 .box img {
@@ -97,9 +109,11 @@ body {
     max-height: 40px;
     overflow: visible;
     padding-top: 4px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
 
 }
+
+
 .box-text {
 	margin: 0 0px 60px 0;
 	padding: 30px;
@@ -123,7 +137,7 @@ body {
 	height: 750px;
 	padding: 65px 80px;
 	width: 750px;
-	text-align: center;
+	
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
 	box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	border-radius: 2px;
@@ -132,7 +146,7 @@ body {
 
 .hero-section3 {
 	background-color: #fff; 
-	height: 200px;
+	height: 300px;
 	padding: 65px 80px;
 	width: 750px;
 	text-align: center;
@@ -162,12 +176,15 @@ body {
   color: #333 !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.56);
   -webkit-font-smoothing: antialiased;
-  font-weight: 470;
+  font-weight: 500;
 
+
+  
 }
 .masthead {
 	display: inline-block;
-	background-color: rgba(0,0,0,0.5);
-	padding: 10px 15px;
+	background-color: rgba(0,0,0,0.3);
+	padding: 6px 6px;
 	border-radius: 5px;
+
 }
