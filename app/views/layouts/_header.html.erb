@@ -1,7 +1,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/"> <img src="/assets/hyre.png" alt="home" ></a>
+      <a class="brand" href="/"> <img src="/assets/hyre3.png" alt="home" width="75" height="38"></a>
       
       
  
@@ -27,14 +27,22 @@
       	
         <ul class="nav pull-left">
         <!--<li><%= link_to "Hyre", root_path %></li> -->
-      
       </ul>
+
+      <div style="padding-top: 3px">
+        <form action="/pins" class="navbar-search pull-left" method="get">
+
+          <input id="search" type="text" name="search" class="search-query" placeholder="Search: 'san francisco', 'rails', 'iOS'..." >
+
+          <!--<%= image_submit_tag("search.png", :name => nil) %> -->
+        </form>
+      </div>
+
+
 		    <ul class="nav pull-right">
-          
+          <% if user_signed_in? %>
 
-        <% if user_signed_in? %>
-
-          <li><%= link_to "Post a Job", new_pin_path, class: "btn btn-header btn-custom" %></li>
+          <li><%= link_to "+ Post a Job", new_pin_path, class: "btn btn-header btn-custom2" %></li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 
@@ -48,11 +56,11 @@
             <li><%= link_to "Why Hyre?", why_path %></li>
             <li><%= link_to "About Hyre", about_path %></li>
           </ul>
-            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete %></li>
             <% else %>
-            <li><%= link_to "Why Hyre?", why_path %></li>
-            <!--<li><%= link_to "Pricing", pricing_path %></li> -->
-            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "WHY HYRE?", why_path %></li>
+            <!--<li><%= link_to "PRICING", pricing_path %></li>-->
+            <li><%= link_to "ABOUT", about_path %></li>
           </div>
           <% end %>
 		    </ul>

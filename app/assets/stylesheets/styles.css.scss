@@ -2,8 +2,8 @@
 /*$baseFontFamily: Oxygen;*/
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
 
-$navbarLinkColor: #cccccc;
-$navbarLinkColorHover: #333333;
+$navbarLinkColor: #999999;
+$navbarLinkColorHover: #1d95cb;
 $btnPrimaryBackground: #3399ff;
 $btnPrimaryBackgroundHighlight: #3366cc;
 $navbarBackgroundHighlight: #ffffff;
@@ -59,15 +59,15 @@ body {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	box-shadow: 0px 1px 3px #444;
+	box-shadow: 0px 1px 3px #999;
 	width: 270px;
 }
 
 .box img {
 	display: block;
 	width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
 	border-radius: 1px;
 }
 
@@ -103,23 +103,60 @@ body {
 .why {
 	background-color: #cccccc;
 }
-	
+/************************** NavBar stuff ***************/
+.navbar-inner {
+	background-image: url(hyreheaderbg.png);
+	background-repeat: repeat-x;
+	border-color: #cccccc;
+	font-weight: normal;
+	font-size: 11px;
+
+}
 
 .navbar .brand {
     max-height: 40px;
     overflow: visible;
-    padding-top: 4px;
-    padding-bottom: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 
+
+}
+.la {
+	position: absolute;
+	z-index: 3;
+	right: 170px;
+	margin-top: 20px;
+	height: 165px;
+	width: 300px;
+	background-color: #b0e0e6;
+	text-indent: 20px;
+	padding-top: 20px;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+.navbar-search .search-query {
+	width: 245px;
+	height: 18px;
+	border-radius: 3px;
+	margin-bottom: 0;
+	padding-left: 28px;
+	background-image: url(searchglass2.png);
+	background-repeat: no-repeat;
+	background-position: 2px ;
+	
 }
 
 
+/************************** NavBar stuff ***************/
 .box-text {
 	margin: 0 0px 60px 0;
 	padding: 30px;
 	background: #ffffff;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	position: relative;
+	z-index: 2;
 	
 	
 }
@@ -145,8 +182,9 @@ body {
 }
 
 .hero-section3 {
+	background-image: url(whitetexturebg.png);
 	background-color: #fff; 
-	height: 300px;
+	height: 400px;
 	padding: 65px 80px;
 	width: 750px;
 	text-align: center;
@@ -177,14 +215,34 @@ body {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.56);
   -webkit-font-smoothing: antialiased;
   font-weight: 500;
-
-
-  
+ 
 }
+.btn-custom2 {
+  background-color: hsl(52, 100%, 42%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffee84", endColorstr="#d6b900");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffee84), to(#d6b900));
+  background-image: -moz-linear-gradient(top, #ffee84, #d6b900);
+  background-image: -ms-linear-gradient(top, #ffee84, #d6b900);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffee84), color-stop(100%, #d6b900));
+  background-image: -webkit-linear-gradient(top, #ffee84, #d6b900);
+  background-image: -o-linear-gradient(top, #ffee84, #d6b900);
+  background-image: linear-gradient(#ffee84, #d6b900);
+  border-color: #d6b900 #d6b900 hsl(52, 100%, 33.5%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.56);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  height: 10px;
+  line-height: 0.8em;
+  
+ 
+}
+
 .masthead {
 	display: inline-block;
 	background-color: rgba(0,0,0,0.3);
 	padding: 6px 6px;
 	border-radius: 5px;
-	
+
 }

@@ -1,5 +1,6 @@
 <% if user_signed_in? %>
 <br>
+<font size="5px" face="helveticaneue" color="#555555" style="margin-left: 5px"> Startups hiring right now:</font><br><br>
 <body background="/assets/whitetexturebg.png" style="background-repeat:repeat;">
 
 <% else %>
@@ -13,18 +14,20 @@
 	<br>
 	<br>
 	
-		<font size="7.0em" face="HelveticaNeue-medium" color="white" style="text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px">Find your next rockstar.</font>
+		<font size="7.0em" face="HelveticaNeue-medium" color="white" style="text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px">Work at awesome startups.</font>
 
 <br>
 <br>
 
-		<font size="4px" color="#ffffff" style="text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px" face="helveticaneue-light"  >Hyre is a simple, beautiful way to help startup companies <br>reach the best <font face="Baskerville-Italic">&</font> brightest.</font>
+		<font size="4px" color="#ffffff" style="text-shadow:0px 2px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px" face="helveticaneue-light"  >Hyre is a simple, beautiful way to help startups connect <br>with the best <font face="Baskerville-Italic">&</font> brightest.</font>
 	
-	<br><br>
+	<br>
+	<br>
+
 		<div style="padding-bottom: 145px">
 			<div class="masthead">
 			<%= link_to "Login", new_user_session_path, class: "btn btn-large" %>&nbsp;&nbsp;
-			<%= link_to "Post Free Job Listing", new_user_registration_path, class: "btn btn-primary btn-custom btn-large" %>
+			<%= link_to "Hiring? Post Free Job", new_user_registration_path, class: "btn btn-primary btn-custom btn-large" %>
 			</div>
 	<br> 
 	<br>
@@ -39,7 +42,7 @@
 <br>
 <br>
 
-<font size="5px" face="oxygen" color="#393c3d" style="margin-left: 5px"> Startups hiring right now:</font><br><br>
+<font size="5px" face="helveticaneue" color="#555555" style="margin-left: 5px"> Startups hiring right now:</font><br><br>
 	<div class="row">
 
 	</div>

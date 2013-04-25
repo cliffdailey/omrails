@@ -1,4 +1,5 @@
 require 'rails_autolink'
+require 'will_paginate/array'
 
 class PinsController < ApplicationController
   before_filter :authenticate_user!, except: [:index, :show]
@@ -11,8 +12,8 @@ class PinsController < ApplicationController
   end
 
   def index
-    @pins = Pin.order("created_at desc").page(params[:page]).per_page(10)
-
+    @pins = Pin.search(params[:search])
+    @pins = @pins.paginate(:page => params[:page], :per_page => 20)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
