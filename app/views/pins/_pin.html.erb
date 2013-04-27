@@ -1,17 +1,18 @@
 <div class="box">
 		<%= link_to (image_tag pin.image), pin %>
 	<p class="description">
-		<font face="helveticaNeue" size="3px" color="#3d3d3d"> <%= pin.title %> </font>
+		<font face="oxygen" size="2px" color="#333333"> <%= pin.title %> </font> <br><font color="#999999">	<%= pin.location %></font>
 		<!-- <%= pin.description %> -->
 		</p>
-	<p class="description">
-		
+
+	
+		<div style="padding-left: 8px">
 			<font color="#8c7e7e" >posted by</font> <font color="teal"><%= link_to "#{pin.user.name}", user_path(pin.user) %></font>
 
-			<div id="like_star_<%= pin.id %>">
+			<div id="like_star_<%= pin.id %>"> 
 		<%= render 'pins/star', :pin => pin %>
 	</div>
-	</p>
+	
 
 	<% if current_user == pin.user %>
 		<p>
@@ -19,4 +20,5 @@
 			<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 		</p>
 	<%end%>
+</div>
 </div>

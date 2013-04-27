@@ -50,9 +50,9 @@ body {
 
 
 .box {
-	margin: 5px;
+	margin: 9px;
 	background-color: white;
-	padding: 5.5px;
+	padding: 0px;
 	font-size: 11px;
 	line-height: 1.4em;
 	float: left;
@@ -60,7 +60,7 @@ body {
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	box-shadow: 0px 1px 3px #999;
-	width: 270px;
+	width: 271px;
 }
 
 .box img {
@@ -72,7 +72,7 @@ body {
 }
 
 .description {
-	margin: 10px 0px 5px;
+	margin: 10px 8px 10px;
 	font-size: 12px;
 	color: #333333;
 }
@@ -86,6 +86,8 @@ body {
 .hero-unit {
 	background: url(bluebackground.jpg);
 }
+
+
 
 .icon-black-star {
     background-image: url(black_star.png);
@@ -108,7 +110,7 @@ body {
 	background-image: url(hyreheaderbg.png);
 	background-repeat: repeat-x;
 	border-color: #cccccc;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 11px;
 
 }
@@ -136,19 +138,36 @@ body {
 
 }
 .navbar-search .search-query {
-	width: 245px;
+	width: 240px;
 	height: 18px;
 	border-radius: 3px;
 	margin-bottom: 0;
 	padding-left: 28px;
 	background-image: url(searchglass2.png);
 	background-repeat: no-repeat;
+	background-position: 3px ;
+
+
+}
+.navbar-search .search-query2 {
+	width: 600px;
+	height: 31px;
+	border-radius: 3px;
+	margin-bottom: 0;
+	padding-left: 15px;
+	/*background-image: url(searchglass2.png);*/
+	background-repeat: no-repeat;
 	background-position: 2px ;
-	
+	font-size: 19px;
+	font-family: "helveticaNeue-light";
+	-webkit-box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+
+
 }
 
 
-/************************** NavBar stuff ***************/
+/************************** Pages: About/Why/Pricing ***************/
 .box-text {
 	margin: 0 0px 60px 0;
 	padding: 30px;
@@ -229,20 +248,36 @@ body {
   background-image: -o-linear-gradient(top, #ffee84, #d6b900);
   background-image: linear-gradient(#ffee84, #d6b900);
   border-color: #d6b900 #d6b900 hsl(52, 100%, 33.5%);
-  color: #333 !important;
+  color: #393c3d !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.56);
   -webkit-font-smoothing: antialiased;
-  font-weight: 500;
-  height: 10px;
+  font-weight: bold;
+  height: 8px;
   line-height: 0.8em;
-  
- 
-}
+  font-size: 11px;
 
+}
+.btn-custom3 {
+  background-color: hsl(324, 100%, 40%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff1ea5", endColorstr="#cc007a");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ff1ea5), to(#cc007a));
+  background-image: -moz-linear-gradient(top, #ff1ea5, #cc007a);
+  background-image: -ms-linear-gradient(top, #ff1ea5, #cc007a);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff1ea5), color-stop(100%, #cc007a));
+  background-image: -webkit-linear-gradient(top, #ff1ea5, #cc007a);
+  background-image: -o-linear-gradient(top, #ff1ea5, #cc007a);
+  background-image: linear-gradient(#ff1ea5, #cc007a);
+  border-color: #cc007a #cc007a hsl(324, 100%, 36%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
+  -webkit-font-smoothing: antialiased;
+}
 .masthead {
 	display: inline-block;
-	background-color: rgba(0,0,0,0.3);
-	padding: 6px 6px;
+	background-color: rgba(0,0,0,0.4);
+	padding: 0px 4px 4px 4px;
 	border-radius: 5px;
-
+	/*border: 1px solid rgba(0,0,0,0.6);
+	width: 800;*/
 }

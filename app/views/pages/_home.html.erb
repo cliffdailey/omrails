@@ -7,30 +7,36 @@
 
 <body background="/assets/startupoffice3light.png"style="background-repeat:no-repeat;">
 
-		<!--<a href="/"><img src="/assets/hyrebetalogo.png" height="70" width="130"></a><br> -->
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	
-		<font size="7.0em" face="HelveticaNeue-medium" color="white" style="text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px">Work at awesome startups.</font>
+<div style='padding-bottom: 10px'>
+		<font size="7.0em" face="HelveticaNeue-medium" color="white" style="text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px;padding-bottom: 20px">Work at the best startups.</font><br></div>
 
-<br>
-<br>
+
+
 
 		<font size="4px" color="#ffffff" style="text-shadow:0px 2px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px" face="helveticaneue-light"  >Hyre is a simple, beautiful way to help startups connect <br>with the best <font face="Baskerville-Italic">&</font> brightest.</font>
 	
 	<br>
 	<br>
 
-		<div style="padding-bottom: 145px">
+		<div style="padding-bottom: 170px">
 			<div class="masthead">
-			<%= link_to "Login", new_user_session_path, class: "btn btn-large" %>&nbsp;&nbsp;
-			<%= link_to "Hiring? Post Free Job", new_user_registration_path, class: "btn btn-primary btn-custom btn-large" %>
+			<form action="/pins" class="navbar-search pull-left" method="get">
+
+          <input id="search" type="text" name="search" class="search-query2" placeholder="Try searching jobs by city, position or keywords" >
+
+          <%= image_submit_tag("hyresearchbutton4.png", :name => nil, class: "btn btn-primary btn-custom3")%> 
+      </form>
+        <!--<%= link_to "Login", new_user_session_path, class: "btn btn-large" %>&nbsp;&nbsp;
+			<%= link_to "Hiring? Post Free Job", new_user_registration_path, class: "btn btn-primary btn-custom btn-large" %>-->
 			</div>
 	<br> 
-	<br>
+	
 
 	<div style="text-align: left">
 		 <span class='st_twitter_hcount' displayText='Tweet'></span>
@@ -42,10 +48,11 @@
 <br>
 <br>
 
-<font size="5px" face="helveticaneue" color="#555555" style="margin-left: 5px"> Startups hiring right now:</font><br><br>
+<font size="5px" face="helveticaneue" color="#555555" style="margin-left: 8px"> Startups hiring right now:</font><br><br>
 	<div class="row">
 
 	</div>
+	
 
 
 

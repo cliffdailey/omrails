@@ -13,7 +13,10 @@
     <% @user.pins.each do |pin| %>
         <div class="box">
           <%= link_to (image_tag pin.image), pin %>
-          <p class="description"><%= pin.description %><p>    <p><%= pluralize(pin.likes.count, 'like') %></p>         
+          <p class="description">
+            <%= pin.title %>
+            <!--<%= pin.description %>--><p>    <p>
+            <div style="padding-left: 9px"><%= pluralize(pin.likes.count, 'like') %></div></p>         
         </div> 
         
     <% end %>  

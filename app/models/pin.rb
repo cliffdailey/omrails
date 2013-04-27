@@ -1,5 +1,5 @@
 class Pin < ActiveRecord::Base
-  attr_accessible :description, :image, :title
+  attr_accessible :description, :image, :title, :location
 
   validates :description, presence: true
 	validates :user_id, presence: true
@@ -14,7 +14,7 @@ class Pin < ActiveRecord::Base
 
 def self.search(search)
   if search
-    find(:all, :conditions => ['description LIKE ?', "%#{search}%"])
+    find(:all, :conditions => ['title LIKE ? or description LIKE ? or location LIKE ?', "%#{search}%", "%#{search}%", "%#{search}%"])
   else
     find(:all, order: "created_at desc")
 
