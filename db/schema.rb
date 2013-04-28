@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130425124247) do
+ActiveRecord::Schema.define(:version => 20130428144013) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -53,10 +53,10 @@ ActiveRecord::Schema.define(:version => 20130425124247) do
 
   create_table "likes", :force => true do |t|
     t.integer  "user_id"
-    t.string   "pin_id"
+    t.integer  "pin_id",     :limit => 255
     t.string   "integer"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "pins", :force => true do |t|
