@@ -14,7 +14,8 @@ class Pin < ActiveRecord::Base
 
 def self.search(search)
   if search
-    find(:all, :conditions => ['title LIKE ? or description LIKE ? or location LIKE ?', "%#{search}%", "%#{search}%", "%#{search}%"], order: "created_at desc")
+    losearch = search.downcase
+    find(:all, :conditions => ['lower(title) LIKE ? or lower(description) LIKE ? or lower(location) LIKE ?', "%#{losearch}%", "%#{losearch}%", "%#{losearch}%"], order: "created_at desc")
   else
     find(:all, order: "created_at desc")
 
