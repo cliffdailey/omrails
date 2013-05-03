@@ -13,7 +13,7 @@
 		<script type="text/javascript">stLight.options({publisher: "ur-f6c07b2e-9d16-7738-1143-1cef79e83f21", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	</head>
 
-	<body>
+<body>
 
 		<div id="fb-root"></div>
 				<script>(function(d, s, id) {
@@ -24,14 +24,22 @@
   			fjs.parentNode.insertBefore(js, fjs);
 				}(document, 'script', 'facebook-jssdk'));</script>
 
+
+
 		<%= render 'layouts/header' %>
 		<div class="container">
 			<% flash.each do |name, msg| %>
 				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 			<% end %>
+
 			<%= yield %>
+
+			<!--<div id="back_to_top">
+					<%= link_to (image_tag 'back-to-top.png'), '#' %>
+			</div>-->
+
 			<%= render 'layouts/footer' %>
-		</div>
+</div>
 
 <script type="text/javascript">
 	$(document).ready(function(){		
@@ -41,5 +49,5 @@
 		}, 2000);		
 	});
 </script>
-	</body>
+</body>
 </html>

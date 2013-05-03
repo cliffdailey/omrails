@@ -1,6 +1,7 @@
 /* You could change the font*/
 /*$baseFontFamily: Oxygen;*/
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 $navbarLinkColor: #999999;
 $navbarLinkColorHover: #1d95cb;
@@ -14,7 +15,7 @@ $navbarBackground: #ffffff;
 
 body {
 	padding-top:60px;
-	background-color: #ffffff;
+	background-color: #fcfcfc;
 	line-height: 1.5em;
 	padding-left: 10px;
 
@@ -47,7 +48,23 @@ body {
 }
 
 /* Required for jQuery Masonry */
+#back_to_top {
+	position: fixed;
+	right: 0;
+	top: 150px;
+	display: block;
+}
 
+.homeheader {
+	font-size: 48px;
+	text-shadow:0px 0px 15px #000000, 0px -1px 1px #000000;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+	color: #fff;
+	font-weight: 500;
+	text-rendering: optimizelegibility;
+}
 
 .box {
 	margin: 9px;
@@ -70,7 +87,26 @@ body {
 	-webkit-border-radius: 1px;
 	-moz-border-radius: 1px;
 	border-radius: 1px;
+	position: relative;
+	/*opacity:0.7;
+filter:alpha(opacity=40); /* For IE8 and earlier 
 }
+img:hover {
+	opacity:1.0;
+	filter:alpha(opacity=40);*/
+} 
+
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+    
+    z-index: 9;
+}
+
 
 .description {
 	margin: 10px 8px 10px;
@@ -83,6 +119,7 @@ body {
 	width: 500px;
 	margin: 0px 0px 0px 65px;
 }
+
 
 .hero-unit {
 	background: url(bluebackground.jpg);
@@ -106,7 +143,11 @@ body {
 .why {
 	background-color: #cccccc;
 }
+
+
 /************************** NavBar stuff ***************/
+
+
 .navbar-inner {
 	background-image: url(hyreheaderbg.png);
 	background-repeat: repeat-x;
@@ -150,8 +191,14 @@ body {
 
 
 }
+html {
+    background: url(whitetexturebg.png);
+    background-repeat: repeat;
+}
+
+
 .navbar-search .search-query2 {
-	width: 600px;
+	width: 650px;
 	height: 31px;
 	border-radius: 3px;
 	margin-bottom: 0;
@@ -202,12 +249,12 @@ body {
 }
 
 .hero-section3 {
-	background-image: url(whitetexturebg.png);
+	/*background-image: url(whitetexturebg.png);*/
 	background-color: #fff; 
 	height: 400px;
 	padding: 65px 80px;
 	width: 750px;
-	text-align: center;
+	text-align: left;
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
 	box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	border-radius: 2px;
@@ -273,12 +320,14 @@ body {
   color: #fff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
   -webkit-font-smoothing: antialiased;
+
 }
 .masthead {
 	display: inline-block;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.4);
 	padding: 0px 4px 4px 4px;
 	border-radius: 5px;
+	text-align: center;
 	/*border: 1px solid rgba(0,0,0,0.6);
 	width: 800;*/
 }
