@@ -16,7 +16,7 @@
 				<p><font size="5px" color="#3d3d3d"><%= @pin.title %></font><font color="#a3a3a3" face="helveticaneue" size="2px"> posted by <%= link_to "#{@pin.user.name}", user_path(@pin.user) %></font></p></font>
 
 				<div style="text-align: center">
-					<!--<%= (image_tag @pin.image)%>--><iframe width="98%" height="415" src="http://www.youtube.com/embed/<%= @pin.yvideo %>?autoplay=1" frameborder="0" ></iframe>
+					<%= (image_tag @pin.image)%><!--<iframe width="100%" height="415" src="http://www.youtube.com/embed/<%= @pin.yvideo %>?autoplay=1" frameborder="0" ></iframe>-->
 				</div>
 			<p class="description">
 				<%= simple_format(auto_link(@pin.description, :html => { :target => '_blank'})) %>

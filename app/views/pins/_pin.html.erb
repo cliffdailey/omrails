@@ -1,13 +1,14 @@
 <div class="box">
-		<p><%= link_to (image_tag pin.image), pin %> 
+	
+		<p><%= link_to (image_tag pin.image), pin %></p>
 
-			<a href="/pins/<%= pin.id %>"><img src="/assets/PlayButton.png" width="272" height="auto" border="0" style="background:URL(http://i3.ytimg.com/vi/<%= pin.yvideo %>/mqdefault.jpg) center center ;" frameborder="0" ></img>
-		  </span></a><!--<iframe width="270" height="auto" src="http://www.youtube.com/embed/<%= pin.yvideo %>" frameborder="0" ></iframe>-->
+		<!--<a href="/pins/<%= pin.id %>"><img src="/assets/PlayButton4.png" width="272" height="auto" border="0" style="background:URL(http://i3.ytimg.com/vi/<%= pin.yvideo %>/mqdefault.jpg) center center ;" frameborder="0" ></img>
+		</span></a><!--<iframe width="270" height="auto" src="http://www.youtube.com/embed/<%= pin.yvideo %>" frameborder="0" ></iframe>-->
 
-	<p class="description">
+		<p class="description">
 		<font face="open sans" size="2px" color="#404040"> <%= pin.title %> </font> <br><font face="open sans" color="#999999">	<%= pin.location %></font>
 		<!-- <%= pin.description %> -->
-		</p>
+		
 <!--<div class="icon"><img src="assets/back-to-top.png" width="40px" height="40px"></img></div>-->
 	
 		<div style="padding-left: 8px">
@@ -26,3 +27,4 @@
 	<%end%>
 </div>
 </div>
+
