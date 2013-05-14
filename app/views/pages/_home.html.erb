@@ -5,7 +5,7 @@
 
 <% else %>
 
-<body background="/assets/startupoffice3.png"style="background-repeat:no-repeat;">
+<body background="/assets/startupoffice3light.png"style="background-repeat:no-repeat;">
 
 	<br>
 	<br>
@@ -16,17 +16,17 @@
 		<div class="homeheader">Work at the best startups.</div>
 
 
-
-		<font size="4px" color="#ffffff" style="text-shadow:0px 2px 15px #000000, 0px -1px 1px #000000;letter-spacing: 1px" face="helveticaneue"  >Hyre is a beautiful way to help startups connect with the best <font face="Baskerville-Italic">&</font> brightest. </font>
+<div class="homesubhead">
+		Hyre is a beautiful way to help startups connect with the best <font face="Baskerville-Italic">&</font> brightest</div>
 	
-	<br>
+	
 	<br>
 
 		<div style="padding-bottom: 40px">
 			<div class="masthead">
 			<form action="/pins" class="navbar-search pull-left" method="get">
 
-          <input id="search" type="text" name="search" class="search-query2" placeholder="Try searching startup jobs by city, position or keyword" >
+          <input id="search" type="text" name="search" class="search-query2" placeholder="Want to work at a startup? Search jobs by city, position or keyword" >
 
           <%= image_submit_tag("hyresearchbutton4.png", :name => nil, class: "btn btn-custom3")%> 
       </form>
@@ -48,9 +48,10 @@
 </div>
 </body>
 <br>
-<br>
 
-<font size="5px" face="helveticaneue" color="#555555" style="margin-left: 8px"> Startups hiring right now:</font><br><br>
+
+
+<div class="startups-hiring"> <h5>Startups hiring right now</h5>
 	<div class="row">
 
 	</div>

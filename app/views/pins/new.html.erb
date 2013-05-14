@@ -24,7 +24,8 @@
       
  			<%= f.input :title, label: "Job Title", :placeholder => '"Senior Designer", "Software Developer"' %>
       <%= f.input :location, label: "Location", :placeholder => '"Los Angeles", "San Francisco", "Anywhere" ' %>
-    	<%= f.input :description, label: "Job Description", as: :text, input_html: { rows: "10" }, :placeholder => "...share your company's culture,  personality and what it's like to work there!"  %>
+    
+    	<%= f.input :description, label: "Job Description", as: :text, input_html: { rows: "10", :style => 'width: 450px' }, :placeholder => "...share your company's culture,  personality and what it's like to work there!" %>
 
 
   <div class="form-actions">
