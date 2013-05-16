@@ -15,7 +15,7 @@ $navbarBackground: #ffffff;
 
 body {
 	padding-top:60px;
-	background-color: #fcfcfc;
+	background-color: #ffffff;
 	line-height: 1.5em;
 	padding-left: 10px;
 
@@ -96,8 +96,8 @@ width: 40px;
 	line-height: 27px;
 }
 .box {
-	margin: 9px;
-	background-color: white;
+	margin: 6px;
+	background-color: #fafafa;
 	padding: 0px;
 	font-size: 11px;
 	line-height: 1.4em;
@@ -105,10 +105,21 @@ width: 40px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	box-shadow: 0px 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	width: 272px;
+	/*box-shadow: 0px 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);*/
+	width: 278px;
+	border:1px solid rgba(204,204,204,0.6);
 
+}
+.box:hover {
+	box-shadow: 0px 1px 4px rgba(153,153,153,0.3);
+	-webkit-box-shadow: 0 1px 4px  rgba(153,153,153,0.3);
+	-webkit-transform: scale(1.01);
+-moz-transform: scale(1.01);
+-ms-transform: scale(1.01);
+-o-transform: scale(1.01);
+transform: scale(1.01);
+z-index: 100;
 }
 
 .box img {
@@ -125,14 +136,14 @@ img:hover {
 	opacity:1.0;
 	filter:alpha(opacity=40);*/
 } 
-.box img:hover {
-	-webkit-transform: scale(1.03);
--moz-transform: scale(1.03);
--ms-transform: scale(1.03);
--o-transform: scale(1.03);
-transform: scale(1.03);
+/*.box img:hover {
+	-webkit-transform: scale(1.02);
+-moz-transform: scale(1.02);
+-ms-transform: scale(1.02);
+-o-transform: scale(1.02);
+transform: scale(1.02);
 z-index: 100;
-}
+}*/
 
 .description {
 	margin: 10px 8px 10px;
@@ -321,7 +332,7 @@ html {
 .hero-section3 {
 	/*background-image: url(whitetexturebg.png);*/
 	background-color: #fff; 
-	height: 500px;
+	height: 600px;
 	padding: 78px 78px;
 	width: 760px;
 	text-align: left;
