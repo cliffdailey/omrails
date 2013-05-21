@@ -1,21 +1,23 @@
 <br>
 		<div class="row">
-  <div class="span6 offset3">
+  <div class="span8 offset2">
     <div class="box-text">
-			<font size="6px">Edit job ad</font>
+			<font size="6px">EDIT YOUR JOB LISTING</font>
 				<%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
   			<%= f.error_notification %>
   			<%= f.full_error :image_file_size, class: "alert alert" %>
   			<%= f.full_error :image_content_type, class: "alert alert" %>
 <br>
- 				<%= f.input :image, label: "Upload an image" %>
+<div class="imagevid">
+ 				<%= f.input :image, label: "Upload an image" %></div>
+        <br>
  				<%= f.input :title, label: "Job title" %>
         <%= f.input :location, label: "Location" %>
-    		<%= f.input :description, label: "Job descripton", as: :text, input_html: { rows: "10" } %>
+    		<%= f.input :description, label: "Job Description", as: :text, input_html: { rows: "10", :style => 'width: 450px' } %>
 
 
   <div class="form-actions">
-    <%= f.submit "Update Job Listing", class: "btn btn-primary" %>
+    <%= f.submit "UPDATE JOB LISTING", class: "btn btn-primary btn-custom btn-large" %>
 </div>
 <%= link_to 'Show', @pin %> |
 <%= link_to 'Back', pins_path %>
